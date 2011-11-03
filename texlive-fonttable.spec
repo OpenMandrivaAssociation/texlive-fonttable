@@ -1,3 +1,9 @@
+# revision 21399
+# category Package
+# catalog-ctan /macros/latex/contrib/fonttable
+# catalog-date 2009-10-20 21:39:17 +0200
+# catalog-license lppl1.3
+# catalog-version 1.6
 Name:		texlive-fonttable
 Version:	1.6
 Release:	1
@@ -50,6 +56,7 @@ a clash with that package.
 #- source
 %doc %{_texmfdistdir}/source/latex/fonttable/fonttable.dtx
 %doc %{_texmfdistdir}/source/latex/fonttable/fonttable.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ a clash with that package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
