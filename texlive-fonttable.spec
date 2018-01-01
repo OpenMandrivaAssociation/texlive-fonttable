@@ -1,9 +1,3 @@
-# revision 21399
-# category Package
-# catalog-ctan /macros/latex/contrib/fonttable
-# catalog-date 2009-10-20 21:39:17 +0200
-# catalog-license lppl1.3
-# catalog-version 1.6
 Name:		texlive-fonttable
 Version:	1.6c
 Release:	1
@@ -40,12 +34,10 @@ a clash with that package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/fonttable/fonttable.sty
-%doc %{_texmfdistdir}/doc/latex/fonttable/README
-%doc %{_texmfdistdir}/doc/latex/fonttable/fonttable.pdf
+%{_texmfdistdir}/tex/latex/fonttable
+%doc %{_texmfdistdir}/doc/latex/fonttable
 #- source
-%doc %{_texmfdistdir}/source/latex/fonttable/fonttable.dtx
-%doc %{_texmfdistdir}/source/latex/fonttable/fonttable.ins
+%doc %{_texmfdistdir}/source/latex/fonttable
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,17 +48,3 @@ a clash with that package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6-2
-+ Revision: 752046
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6-1
-+ Revision: 718486
-- texlive-fonttable
-- texlive-fonttable
-- texlive-fonttable
-- texlive-fonttable
-
