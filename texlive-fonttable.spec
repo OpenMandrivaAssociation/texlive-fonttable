@@ -1,6 +1,6 @@
 Name:		texlive-fonttable
-Version:	44799
-Release:	2
+Version:	74608
+Release:	1
 Summary:	Print font tables from a LaTeX document
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/fonttable
