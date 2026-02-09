@@ -1,5 +1,5 @@
 Name:		texlive-fonttable
-Version:	74608
+Version:	77677
 Release:	1
 Summary:	Print font tables from a LaTeX document
 Group:		Publishing
